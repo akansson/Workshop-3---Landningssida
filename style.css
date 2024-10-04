@@ -1,0 +1,71 @@
+.main-grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "hero hero hero hero hero hero"
+    "hero hero hero hero hero hero"
+    "sell sell sell sell sell sell"
+    "sell sell sell sell sell sell"
+    "reco reco reco reco reco reco"
+    "reco reco reco reco reco reco"
+    "cta cta cta cta cta cta"
+    "cta cta cta cta cta cta"
+    "footer footer footer footer footer footer";
+}
+
+.nav-container {
+  grid-area: header;
+  display: grid;
+  grid-template-areas: "logo logo logo link";
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.header {
+  grid-area: header;
+  border: 5px solid black;
+  padding: 20px;
+}
+
+.logo {
+  width: 80px;
+  grid-area: logo;
+  display: grid;
+  border: 1px solid blue;
+  padding: 20px;
+}
+
+.nav-links {
+  grid-area: link;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  align-content: space-between;
+  border: 1px solid green;
+}
+
+.link {
+  display: grid;
+  border: 1px solid red;
+  padding: 5px;
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.sell-text {
+  grid-area: sell;
+}
+
+.reco {
+  grid-area: reco;
+}
+
+.c2a {
+  grid-area: cta;
+}
+
+.footer {
+  grid-area: footer;
+}
